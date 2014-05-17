@@ -51,6 +51,10 @@
     outline-offset: 0;
 }
 
+GtkPaned {
+    background-color: @bg_color;
+}
+
 /***************
  * base states *
  ***************/
