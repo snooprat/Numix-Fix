@@ -1,3 +1,6 @@
+GtkPaned {
+    background-color: @bg_color;
+}
 /***********************
  * fallback mode panel *
  ***********************/
