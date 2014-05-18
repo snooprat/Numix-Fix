@@ -19,7 +19,7 @@
 @define-color theme_text_color @text_color;
 @define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
-@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_bg_color alpha(@tooltip_bg_color, 0.9);
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
 /* shadow effects */
@@ -47,8 +47,8 @@
 @define-color menubar_fg_color @dark_fg_color;
 @define-color toolbar_bg_color @theme_bg_color;
 @define-color toolbar_fg_color @theme_fg_color;
-@define-color menu_bg_color @dark_bg_color;
-@define-color menu_fg_color @dark_fg_color;
+@define-color menu_bg_color @theme_base_color;
+@define-color menu_fg_color @theme_text_color;
 @define-color panel_bg_color @dark_bg_color;
 @define-color panel_fg_color @dark_fg_color;
 
