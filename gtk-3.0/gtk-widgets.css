@@ -1610,8 +1610,8 @@ OsScrollbar:insensitive {
 .toolbar .separator:insensitive {
     -GtkWidget-window-dragging: true;
 
-    border-color: shade(@toolbar_bg_color, 0.95);
-    color: shade(@toolbar_bg_color, 0.95);
+    border-color: shade(@toolbar_fg_color, 0.95);
+    color: shade(@toolbar_fg_color, 0.95);
 }
 
 .header-bar GtkSeparatorToolItem,
@@ -1619,8 +1619,8 @@ OsScrollbar:insensitive {
 .header-bar .separator:insensitive {
     -GtkWidget-window-dragging: true;
 
-    border-color: shade(@toolbar_bg_color, 0.95);
-    color: shade(@toolbar_bg_color, 0.95);
+    border-color: shade(@toolbar_fg_color, 0.85);
+    color: shade(@toolbar_fg_color, 0.85);
 }
 .titlebar GtkSeparatorToolItem,
 .titlebar .separator,
@@ -1635,12 +1635,12 @@ OsScrollbar:insensitive {
 .primary-toolbar .button.separator,
 .toolbar .button .separator,
 .toolbar .button.separator {
-    border-color: shade(@toolbar_bg_color, 0.95);
+    border-color: shade(@toolbar_fg_color, 0.95);
 }
 
 .header-bar .button .separator,
 .header-bar .button.separator {
-    border-color: shade(@toolbar_bg_color, 0.95);
+    border-color: shade(@toolbar_fg_color, 0.95);
 }
 .titlebar .button .separator,
 .titlebar .button.separator {
@@ -1651,12 +1651,12 @@ OsScrollbar:insensitive {
 .primary-toolbar .button.separator:insensitive,
 .toolbar .button .separator:insensitive,
 .toolbar .button.separator:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.85);
+    border-color: shade(@toolbar_fg_color, 0.85);
 }
 
 .header-bar .button .separator:insensitive,
 .header-bar .button.separator:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.85);
+    border-color: shade(@toolbar_fg_color, 0.85);
 }
 .titlebar .button .separator:insensitive,
 .titlebar .button.separator:insensitive {
@@ -2094,33 +2094,34 @@ GtkColorButton.button {
 
 .header-bar GtkComboBox,
 .header-bar .button {
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: shade(@toolbar_fg_color, 0.5);
     background-color: shade(@toolbar_bg_color, 1.08);
     background-image: none;
     color: @toolbar_fg_color;
 }
 
 .header-bar .button:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
-    background-color: shade(@toolbar_bg_color, 1.10);
+    border-color: shade(@theme_selected_bg_color, 0.90);
+    background-color: shade(@theme_selected_bg_color, 0.85);
     background-image: none;
 }
 
 .header-bar .button:active {
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: shade(@toolbar_fg_color, 0.5);
     background-color: shade(@toolbar_bg_color, 0.95);
     background-image: none;
+    color: shade(@theme_selected_bg_color, 0.95);
 }
 
 .header-bar .button:active:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: shade(@theme_selected_bg_color, 0.90);
 }
 
 .header-bar .button:focus,
 .header-bar .button:hover:focus,
 .header-bar .button:active:focus,
 .header-bar .button:active:hover:focus {
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: shade(@theme_selected_bg_color, 0.7);
 }
 
 .header-bar .button:insensitive {
@@ -2217,21 +2218,22 @@ GtkColorButton.button {
 
 .primary-toolbar .button:hover,
 .toolbar .button:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
-    background-color: shade(@toolbar_bg_color, 1.10);
+    border-color: shade(@theme_selected_bg_color, 0.90);
+    background-color: shade(@theme_selected_bg_color, 0.85);
     background-image: none;
 }
 
 .primary-toolbar .button:active,
 .toolbar .button:active {
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: shade(@toolbar_fg_color, 0.50);
     background-color: shade(@toolbar_bg_color, 0.95);
     background-image: none;
+    color: shade(@theme_selected_bg_color, 0.95);
 }
 
 .primary-toolbar .button:active:hover,
 .toolbar .button:active:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: shade(@theme_selected_bg_color, 0.90);
 }
 
 .primary-toolbar .button:focus,
@@ -2268,7 +2270,7 @@ GtkColorButton.button {
 .primary-toolbar .entry:focus,
 .toolbar .entry:active,
 .toolbar .entry:focus {
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: shade(@theme_selected_bg_color, 0.90);
 }
 
 /* inline-toolbar */
